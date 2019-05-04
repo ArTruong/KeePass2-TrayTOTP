@@ -235,7 +235,9 @@ namespace TrayTotpGT
             enMenuSetupTotp.Image = Properties.Resources.TOTP_Setup;
             enMenuSetupTotp.ShortcutKeys = (Keys)Shortcut.CtrlShiftI;
             enMenuSetupTotp.Click += OnEntryMenuSetupClick;
-            var ContextMenu = (ToolStripMenuItem)m_host.MainWindow.EntryContextMenu.Items.Find(keeobj_string_EntryContextMenuEntriesSubMenu_Name, true)[0];
+            var ContextMenu = new ToolStripMenuItem();
+            if (m_host.MainWindow.EntryContextMenu.Items.Find(keeobj_string_EntryContextMenuEntriesSubMenu_Name, true).Length > 0)
+                ContextMenu = (ToolStripMenuItem)m_host.MainWindow.EntryContextMenu.Items.Find(keeobj_string_EntryContextMenuEntriesSubMenu_Name, true)[0];
             ContextMenu.DropDownItems.Insert(ContextMenu.DropDownItems.IndexOfKey(keeobj_string_EntryContextMenuEntriesSubMenuSeperator1_Name) + 1, enMenuSetupTotp);
             enMenuSeperator = new ToolStripSeparator();
             ContextMenu.DropDownItems.Insert(ContextMenu.DropDownItems.IndexOf(enMenuSetupTotp) + 1, enMenuSeperator);
