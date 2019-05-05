@@ -5,3 +5,4 @@ This plugin requires KeePass 2.21 as it uses features that are not available in 
 
 This repository is forked from the original at: https://sourceforge.net/projects/traytotp-kp2/
 
+Note: Remember to copy latest KeePass.exe file to this folder before build
