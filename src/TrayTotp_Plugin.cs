@@ -35,7 +35,7 @@ namespace TrayTotpGT
         /// Constants (keepass form object names).
         /// </summary>
         internal const string keeobj_string_EntryContextMenuCopyPassword_Name = "m_ctxEntryCopyPassword";
-        internal const string keeobj_string_EntryContextMenuEntriesSubMenu_Name = "m_ctxEntryMassModify";
+        internal const string keeobj_string_EntryContextMenuEntriesSubMenu_Name = "m_ctxEntryEditQuick";
         internal const string keeobj_string_EntryContextMenuEntriesSubMenuSeperator1_Name = "m_ctxEntrySelectedSep1";
         /// <summary>
         /// Constants (custom string key).
